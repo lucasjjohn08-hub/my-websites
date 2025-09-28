@@ -1,0 +1,190 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>CHIEFS CONNECT — Strategic Finance & Advisory</title>
+  <meta name="description" content="CHIEFS CONNECT — Trusted strategic finance, investment and advisory services. Purple & black themed landing page." />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg:#060609;
+      --panel:#0f0326;
+      --purple-700:#3a0ca3;
+      --purple-500:#6a4cff;
+      --accent:#a45cff;
+      --muted: rgba(255,255,255,0.66);
+      --glass: rgba(255,255,255,0.03);
+      --card-shadow: 0 10px 30px rgba(106,76,255,0.12);
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      font-family:Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+      background: linear-gradient(180deg, var(--bg) 0%, #08080a 100%);
+      color:#fff;
+      -webkit-font-smoothing:antialiased;
+      -moz-osx-font-smoothing:grayscale;
+      line-height:1.5;
+    }
+    .wrap{max-width:1100px;margin:0 auto;padding:36px;position:relative;z-index:2}
+    header{display:flex;justify-content:space-between;align-items:center;gap:20px}
+    .brand{display:flex;align-items:center;gap:12px}
+    .logo-mark{width:52px;height:52px;border-radius:10px;background:linear-gradient(135deg,var(--purple-700),var(--purple-500));display:flex;align-items:center;justify-content:center;box-shadow:0 8px 30px rgba(58,12,163,0.18)}
+    .brand h1{margin:0;font-size:18px;letter-spacing:0.6px}
+    nav a{color:var(--muted);text-decoration:none;margin-left:18px;font-weight:600}
+    nav a:hover{color:var(--accent)}
+    .cta{background:linear-gradient(90deg,var(--accent),var(--purple-500));padding:10px 16px;border-radius:10px;color:#fff;text-decoration:none;font-weight:700;box-shadow:var(--card-shadow)}
+    main{margin-top:28px}
+    .hero{display:grid;grid-template-columns:1fr 420px;gap:32px;align-items:start}
+    .hero h2{font-size:34px;margin:0 0 12px}
+    .muted{color:var(--muted)}
+    .panel{background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));padding:20px;border-radius:14px;box-shadow:var(--card-shadow);backdrop-filter:blur(6px)}
+    .services{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:18px}
+    .service{padding:16px;border-radius:12px;background:var(--glass);border:1px solid rgba(164,92,255,0.06)}
+    footer{margin-top:40px;padding-top:18px;border-top:1px solid rgba(255,255,255,0.04);display:flex;justify-content:space-between;align-items:center;color:var(--muted)}
+    .contact-grid{display:flex;gap:18px;flex-wrap:wrap;margin-top:12px}
+    .contact-card{flex:1;min-width:220px}
+    .social-links{margin-top:12px;display:flex;flex-direction:column;gap:10px}
+    .social-links a{color:var(--muted);text-decoration:none;display:flex;gap:10px;align-items:center}
+    .social-links a:hover{color:var(--accent)}
+    .icon{display:inline-block;width:28px;height:28px;border-radius:6px;background:linear-gradient(135deg,var(--purple-700),var(--purple-500));display:flex;align-items:center;justify-content:center;font-size:14px}
+    @media (max-width:980px){
+      .hero{grid-template-columns:1fr}
+      .services{grid-template-columns:repeat(2,1fr)}
+    }
+    @media (max-width:620px){
+      header{flex-direction:column;align-items:flex-start}
+      .services{grid-template-columns:1fr}
+      .wrap{padding:18px}
+    }
+  </style>
+</head>
+<body>
+  <!-- subtle background visual -->
+  <div aria-hidden="true" style="position:fixed;inset:0;pointer-events:none;opacity:0.06;mix-blend-mode:screen;">
+    <svg preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg" style="width:100%;height:100%;">
+      <defs><linearGradient id="g" x1="0" x2="1"><stop offset="0" stop-color="#6a4cff"/><stop offset="1" stop-color="#0f0326"/></linearGradient></defs>
+      <rect x="-10%" y="0" width="40%" height="100%" fill="url(#g)" transform="skewX(-15)"/>
+      <rect x="50%" y="0" width="30%" height="100%" fill="url(#g)" transform="skewX(-8)"/>
+    </svg>
+  </div>
+
+  <div class="wrap">
+    <header>
+      <div class="brand">
+        <div class="logo-mark" aria-hidden="true">
+          <!-- simple CC monogram -->
+          <svg width="30" height="30" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M4 12A6 6 0 0110 6h1v2H10a4 4 0 100 8h1v2H10a6 6 0 01-6-6z" fill="#fff" opacity="0.95"/>
+            <path d="M14 12a6 6 0 016-6h-1v2h1a4 4 0 110 8h-1v2h1a6 6 0 01-6-6z" fill="#fff" opacity="0.9"/>
+          </svg>
+        </div>
+        <div>
+          <h1>CHIEFS <span style="color:var(--accent)">CONNECT</span></h1>
+          <div class="muted" style="font-size:13px">Strategic Finance & Advisory</div>
+        </div>
+      </div>
+
+      <nav>
+        <!-- links open in a new tab -->
+        <a href="https://chiefsconnect.com/services" target="_blank" rel="noopener noreferrer">Services</a>
+        <a href="https://chiefsconnect.com/about" target="_blank" rel="noopener noreferrer">About</a>
+        <a href="#contact" class="cta" target="_blank" rel="noopener noreferrer">Contact</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero" aria-labelledby="hero-title">
+        <div>
+          <h2 id="hero-title">Finance leadership that connects capital, strategy, and outcomes.</h2>
+          <p class="muted">CHIEFS CONNECT partners with founders, boards, and executive teams to design financial strategies that scale. We specialize in CFO advisory, capital raising, M&A readiness and treasury optimization.</p>
+
+          <div class="services" aria-hidden="false">
+            <div class="service panel">
+              <h3><a href="https://chiefsconnect.com/cfo-as-a-service" target="_blank" rel="noopener noreferrer" style="color:inherit;text-decoration:none">CFO-as-a-Service</a></h3>
+              <p class="muted">Interim and fractional CFO support: modeling, KPIs, investor reporting.</p>
+            </div>
+            <div class="service panel">
+              <h3><a href="https://chiefsconnect.com/capital-strategy" target="_blank" rel="noopener noreferrer" style="color:inherit;text-decoration:none">Capital Strategy</a></h3>
+              <p class="muted">Debt & equity structuring, investor outreach, pitch readiness.</p>
+            </div>
+            <div class="service panel">
+              <h3><a href="https://chiefsconnect.com/ma-exit-planning" target="_blank" rel="noopener noreferrer" style="color:inherit;text-decoration:none">M&A & Exit Planning</a></h3>
+              <p class="muted">Valuation, due diligence prep, buyer communications.</p>
+            </div>
+          </div>
+        </div>
+
+        <aside class="panel" style="width:100%;max-width:420px">
+          <h3 style="margin-top:0">Request a confidential consultation</h3>
+          <p class="muted">Tell us briefly about your challenge and a principal will follow up.</p>
+
+          <form onsubmit="event.preventDefault(); alert('Form demo — in a live site wire this to your backend');">
+            <label class="muted" for="name">Full name</label>
+            <input id="name" type="text" placeholder="Jane Doe" style="width:100%;padding:10px;margin:8px 0;border-radius:8px;border:1px solid rgba(255,255,255,0.04);background:transparent;color:#fff" required>
+
+            <label class="muted" for="email">Email</label>
+            <input id="email" type="email" placeholder="you@company.com" style="width:100%;padding:10px;margin:8px 0;border-radius:8px;border:1px solid rgba(255,255,255,0.04);background:transparent;color:#fff" required>
+
+            <label class="muted" for="message">Brief message</label>
+            <textarea id="message" rows="4" placeholder="Short description" style="width:100%;padding:10px;margin:8px 0;border-radius:8px;border:1px solid rgba(255,255,255,0.04);background:transparent;color:#fff"></textarea>
+
+            <button type="submit" style="width:100%;padding:12px;border-radius:10px;border:none;background:linear-gradient(90deg,var(--purple-500),var(--accent));color:#fff;font-weight:700;cursor:pointer">Request Consultation</button>
+          </form>
+        </aside>
+      </section>
+
+      <!-- About -->
+      <section style="margin-top:36px">
+        <h3>Who we are</h3>
+        <p class="muted">Boutique finance advisory composed of former CFOs, bankers and operators. We translate complex finance into clear decisions — capital strategy, performance transformation and exits.</p>
+      </section>
+
+      <!-- Contact with hyperlinked email -->
+      <section id="contact" style="margin-top:36px">
+        <h3>Contact</h3>
+        <p class="muted">For partnerships, speaking requests or private briefings, reach us:</p>
+
+        <div class="contact-grid">
+          <div class="panel contact-card">
+            <strong>Email</strong>
+            <div class="muted" style="margin-top:8px">
+              <!-- mailto link uses the exact email you requested -->
+              <a href="mailto:lucasjjohn08@email.com" style="color:var(--accent);" target="_blank" rel="noopener noreferrer">lucasjjohn08@email.</a>
+            </div>
+          </div>
+
+          <div class="panel contact-card">
+            <strong>Office</strong>
+            <div class="muted" style="margin-top:8px">Lagos & Global (virtual-first)</div>
+          </div>
+        </div>
+
+        <div class="panel" style="margin-top:18px">
+          <strong>Connect with us</strong>
+          <div class="social-links">
+            <!-- example external links open in a new tab -->
+            <a href="https://wa.me/2349032378171" target="_blank" rel="noopener noreferrer"><span class="icon">W</span> WhatsApp: 09032378171</a>
+            <a href="https://facebook.com/Ceejay" target="_blank" rel="noopener noreferrer"><span class="icon">f</span> Facebook: Ceejay</a>
+            <a href="https://www.tiktok.com/@lucas_john_the_first" target="_blank" rel="noopener noreferrer"><span class="icon">t</span> TikTok: Lucas John the first</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div>© <span id="year"></span> CHIEFS CONNECT — All rights reserved.</div>
+      <div>
+        <a href="https://chiefsconnect.com/privacy" target="_blank" rel="noopener noreferrer" class="muted" style="color:var(--muted);text-decoration:none;margin-right:12px">Privacy</a>
+        <a href="https://chiefsconnect.com/terms" target="_blank" rel="noopener noreferrer" class="muted" style="color:var(--muted);text-decoration:none">Terms</a>
+      </div>
+    </footer>
+  </div>
+
+  <script>
+    // set current year
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
